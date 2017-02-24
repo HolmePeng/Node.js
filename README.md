@@ -179,6 +179,51 @@ URL，URN 是 URI 的子集，或者说 URI是一种标准， URL 和 URN 是一
 
   Mac终端工具：telnet
 
+  ​GIT讲解
+
+  ```
+  git clone
+
+  git add .
+
+  git commit -m ''
+
+  git pull
+
+  git push
+  ```
+
+  ```
+  将修改从暂存区移除 （撤销add操作）
+  git rm --cached <file>   
+  ```
+
+  ```
+  查询git状态
+  git status
+  ```
+
+  ```
+  查询当前某文件与分支或暂存区中有何不同
+  git diff HEAD --<file>
+  ```
+
+  ### 忽略特殊文件/文件夹
+
+  需要生成 .gitignore文件，不办来说 不需要自己创建。
+
+  ```
+  通过 https://github.com/github/gitignore 下载。
+  例如：使用node.js 开发，择取下载 node。gitignore
+  使用是需要 node.gitignore改名为 .gitignore 才会生效
+  .gitignore在 该文件中添加忽略规则，可以填入 文件名/文件夹名。
+
+  在.gitignore中添加如下代码
+  node_modules/
+  则该文件夹下所有文件/文件夹都会被 .git 忽略
+
+  ```
+
   ​
 
   ​
